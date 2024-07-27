@@ -1,6 +1,74 @@
-.form-container{
-    background-image: url("https://www.zaggle.in/blog/wp-content/uploads/2020/04/Why-Expense-Management-Software-is-a-good-automation-tool-768x448.jpg");
-    background-size: cover;
-    height: 500px;
+*{
+    margin: 0;
+}
 
+.form-container{
+    background-image: url("https://img.freepik.com/premium-photo/income-expenses-concept-with-yellow-background-3d-rendering_519469-343.jpg");
+    background-size: cover;
+    height: 730px;
+    background-repeat: no-repeat;
+    padding: 5px;
+    margin: 0;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    font-size: 20px;
+    background-color: transparent;
+    align-items: start;
+    margin:100px auto;
+    backdrop-filter: blur(20px);
+    color:black;
+    font-weight: bold;
+    padding: 20px;
+    border:1px black solid;
+}
+
+
+.form-heading{
+    margin: auto;
+   text-align: center; 
+    margin-bottom: 0;
+}
+
+.input-container{
+   margin: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   position: relative;
+
+
+}
+
+input{
+    margin-left: 10px;
+    padding:2px 5px;
+    position: absolute;
+    left:150px;font-size: 20px;
+    margin: 5px;
+}
+
+.form-btn{
+    font-size: 20px;
+    padding: 10px 80px;
+    margin:40px  auto;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    border: white solid 2px;
+    cursor: pointer;
+
+}
+
+.login-link{
+    margin: auto;
+    padding:0 90px;
+    text-align: center;
+    font-size: 18px;
 }

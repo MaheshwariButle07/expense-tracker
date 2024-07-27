@@ -3,7 +3,7 @@ import Signup from '../Signup/Signup'
 
 function Home() {
   return (
-    <div>Home
+    <div>
       <div><Signup/></div>
     </div>
   )
