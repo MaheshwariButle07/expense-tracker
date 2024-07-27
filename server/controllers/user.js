@@ -37,10 +37,10 @@ const Login  =  async (req,res)=>{
 
     const {Email,Password} = req.body
 
-    const user = new User.findOne({
+    const user = await User.findOne({
         Email:Email,
         Password:Password
-    })
+    });
 
     if(user){
 
