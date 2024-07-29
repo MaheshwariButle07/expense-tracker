@@ -36,7 +36,7 @@ app.post("/login", Login);
 
 app.post("/addTransiction", addTransiction)
 app.get("/getTransiction", fetchTransiction)
-app.delete("/Transiction/:id" , deletTransiction)
+app.delete("/deleteTransiction/:id" , deletTransiction)
 
 const PORT = process.env.PORT_URL;
 

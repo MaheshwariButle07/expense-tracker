@@ -15,7 +15,7 @@ const TransctionSchema = new Schema (
 
         Transction:{
             type: String,
-            enum:["debit","credit"],    
+            enum:["Debit","Credit"],    
         },
 
         Category:{

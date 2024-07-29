@@ -10,12 +10,11 @@ function Login() {
   const [password,setPassword] = useState("")
 
   const Login = async()=>{
-    const response = await axios.post(`http://localhost:5000/login`,{
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`,{
       Email:email,
       Password:password
     })
 
-    console.log(response.data)
 
     if(response.data.success){
       toast.success(response.data.message)
@@ -23,9 +22,11 @@ function Login() {
       localStorage.setItem('currentUser',JSON.stringify(response.data.data))
 
       toast.loading("Redirecting to dashboard")
+
+       
       setTimeout(()=>{
 
-        window.location.href="./"
+        window.location.href="/"
 
       },3000)
     }

@@ -14,7 +14,7 @@ const addTransiction = async(req, res) => {
     
       try{
     
-        const saveTransction = await Transaction.save() 
+        const saveTransction = await Transaction.save() ;
     
         res.json({
             success: true,
@@ -43,20 +43,20 @@ const fetchTransiction = async(req, res)=>{
 
     if(!user){
 
-        res.json({
+        return res.json({
             success:false,
             message:"User Not Find",
             data:null
         })
+    }
 
-        const userTransiction = Transiction.find({userId:userId}).sort({createdAt:-1});
+    const userTransiction = await Transiction.find({user:userId}).sort({createdAt:-1});
 
         res.json({
             success:true,
             message:"User Find Succesfully",
             data:userTransiction
         })
-    }
 
 }; 
 

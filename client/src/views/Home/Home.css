@@ -1,4 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
+.transiction-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 10px gray;
+  margin: 10px 10px;
 }
+.add-transiction{
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 100px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Heading{
+  text-align: center;
+  padding: 20px;
+}
+
+
+.logout-btn{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: rgb(59, 129, 242);
+  border-radius: 50px;
+  padding:10px 15px;
+}
+
