@@ -33,5 +33,6 @@ p{
   background-color: rgb(59, 129, 242);
   border-radius: 50px;
   padding:10px 15px;
+  cursor: pointer;
 }
 
